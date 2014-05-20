@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <img id="image-1" class="image">
+    <img id="image-2" class="image">
+    <img id="image-3" class="image">
+    <img id="image-4" class="image">
+    <a href="#" class="download">Download</a>
+
+
+    <div class="container width-960">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-xs-7  col-sm-7  col-md-7  col-lg-7">
+			
+		  <h1>iCovers v.0.1</h1>
+			
+          <div class="drag-zone bg-info margin-bottom-20">
+            <form action="php/upload.php">
+                <label>Файл:</label>
+                <input type="file" name="photo">
+            </form>
+          </div>
+
+          <form role="form">
+
+            <div class="form-group">
+            	<label>Номер телефона:</label>
+              <input type="text" name="phonenum" class="form-control" id="telNumber" placeholder="Номер телефона" value="+7">
+            </div>
+
+            <div class="form-group text-center">
+
+              <!-- <div class="radio-inline">
+                <label>
+                  <input type="radio" name="type" id="view4" value="4s">
+                  iPhone 4
+                </label>
+              </div>
+
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="type" id="view43d" value="4s3d">
+                  iPhone 4 with 3D
+                </label>
+              </div>
+
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="type" id="view5" value="5s">
+                  iPhone 5
+                </label>
+              </div>
+
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="type" id="view53d" value="5s3d">
+                  iPhone 5 with 3D
+                </label>
+              </div>
+ -->
+              <select name="type" class="radio-inline">
+                <option value="4s">iPhone 4</option>
+                <option value="4s3d">iPhone 4 3D</option>
+                <option value="5s">iPhone 5</option>
+                <option value="5s3d">iPhone 5 3D</option>
+              </select>
+
+              <div class="margin-top-20">
+                <button type="button" class="btn btn-primary1 submit">Создать обложку</button>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+
+          <h2 class="h4">В обработке <span class="count-before">0</span></h2>
+          <div class="wrapper_">
+          <ul class="list-unstyled margin-bottom-20 phones-before">
+            
+          </ul>
+          </div>  
+          <h2 class="h4">Готовые <span class="count-after">0</span></h2>
+          <div class="wrapper_">
+          <ul class="list-unstyled margin-bottom-20 phones-after">
+          </ul>
+        </div>
+       </div>
+      </div>
+    </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
